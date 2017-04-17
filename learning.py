@@ -56,6 +56,10 @@ if __name__ == '__main__':
     # 進化計算開始
     for g in range(NGEN):
         print("-- %i 世代 --" % g)
+        pn = 0
+        for pv in pop:
+            pn += 1
+            print("(" + "{0:4d}".format(pn) + ")" + str(pv))
 
         ##############
         # 選択
